@@ -10,7 +10,7 @@ function makeImageTemplate() {
     const html = /*html*/`
         <li>
             <h2>${images[0].title}</h2>
-            <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg">
+            <img src="${images[0].url}">
         </li>`;
 
     const template = document.createElement('template');
