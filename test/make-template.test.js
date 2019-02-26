@@ -1,30 +1,15 @@
 import images from '../data/images.js';
-// import makeImageTemplate from '../make-image-template.js';
+import makeImageTemplate from '../make-image-template.js';
 
 const test = QUnit.test;
 
 QUnit.module('template creation test');
 
 
-function makeImageTemplate() {
-    const html = /*html*/`
-        <li>
-            <h2>${images[0].title}</h2>
-            <img src="${images[0].url}">
-        </li>`;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    const dom = template.content;
-    return dom;
-
-}
-
-
 
 test('create a template to create image tiles', function(assert) {
     //arrange
-    const result = makeImageTemplate();
+    const result = makeImageTemplate(images);
 
     //act
     const expected = /*html*/ `
