@@ -7,7 +7,7 @@ QUnit.module('template creation test');
 
 test('create a template to create image tiles', function(assert) {
     //arrange
-    const result = makeImageTemplate(images);
+    const result = makeImageTemplate(images[0]);
 
     //act
     const expected = /*html*/ `
