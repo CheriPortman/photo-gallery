@@ -5,8 +5,6 @@ const test = QUnit.test;
 
 QUnit.module('template creation test');
 
-
-
 test('create a template to create image tiles', function(assert) {
     //arrange
     const result = makeImageTemplate(images);
@@ -21,5 +19,4 @@ test('create a template to create image tiles', function(assert) {
 
     //assert
     assert.htmlEqual(result, expected);
-
 });
