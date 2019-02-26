@@ -1,8 +1,8 @@
 function makeImageTemplate(images) {
     const html = /*html*/`
         <li>
-            <h2>${images[0].title}</h2>
-            <img src="${images[0].url}">
+            <h2>${images.title}</h2>
+            <img src="${images.url}">
         </li>`;
 
     const template = document.createElement('template');
