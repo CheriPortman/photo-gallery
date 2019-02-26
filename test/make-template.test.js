@@ -1,19 +1,7 @@
 import images from '../data/images.js';
+import makeImageTemplate from '../make-image-template.js';
 
 const test = QUnit.test;
-
-function makeImageTemplate(image) {
-    const html = /*html*/`
-        <li>
-            <h2>${image.title}</h2>
-            <img src="${image.url}">
-        </li>
-    `;
-
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
 
 
 QUnit.module('template creation test');
